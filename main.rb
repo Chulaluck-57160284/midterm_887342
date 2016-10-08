@@ -10,41 +10,28 @@ else
     #puts nub
     nub = nub + 1
 end
-     #puts a
-end
+     puts a
+end  
   
-  
-puts "ข้อ 2"
-
-fibo = "{"
-
-def prime_fib (number)
-    nub1 = 1
-    until nub1 > number
-    
-    ff = "f" << nub1
-    
-    fibonacci = Hash.new{ |h,k| h[k] = k < 2 ? k : h[k-1] + h[k-2] }
-    fiboanwer = fibonacci[nub1]
-    
-     fibo << "p#{nub1} -> #{fiboanwer} , "
-    
-    puts nub1
-    nub1 = nub1 + 1
-end
-    
-    
-
-    return fibo  
-    
-    
-end
-
-puts prime_fib (50)
-
-
-
-
+puts "ข้อ 4"
+US_states.each do |k,v|
+	    text_rut = "#{k}".upcase
+	    if(text_rut.length>8)
+	            puts "#{k}"
+	    end
+	 end
+puts "ข้อ 5"
+US_states.each do |k,v|
+	    text_rut = "#{k}".upcase
+	    if(text_rut[0]=="M"||text_rut[0]=="N"||text_rut[0]=="S")
+	        num = text_rut.length-1
+	        text = text_rut[num]
+	        if(text=="A"||text=="E"||text=="I"||text=="O"||text=="U")
+	            puts "#{k}"
+	           
+	        end
+	    end
+	 end
 
 
 
